@@ -71,12 +71,29 @@ label[for='new-task'] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
     float: left;
     width: 318px;
 }
 p > button:hover {
     color: #0FC57C;
+}
+
+.add-block{
+    position: relative;
+}
+
+.add-field.empty{
+    border-color: #ff4545ff;
+}
+
+.add-field.empty::after{
+    position: absolute;
+    content: 'Поле не должно быть пустым!';
+    left: 0;
+    top: 65px;
+    font-size: 12px;
+    color: #ff4545ff;
 }
 
 /* Task list */
